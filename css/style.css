@@ -15,7 +15,7 @@ body {
   background-color: #29303b;
 }
 
-.wrapper {
+.rate {
   padding: 50px;
   width: 800px;
   background-image: linear-gradient(#3f4b59, #333d46);
@@ -25,53 +25,48 @@ body {
   border-radius: 15px;
   box-shadow: 0 0 15px #1c232d;
 }
-
-.wrapper h1 {
+.rate__title {
   margin-bottom: 10px;
   font-size: 36px;
 }
-
-.wrapper p {
+.rate__text {
   margin-bottom: 50px;
   font-size: 26px;
-  font-weight: 200;
+  font-weight: 100;
 }
-
-.app-body {
+.rate__body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.section-left,
-.section-right {
+.rate__body__left, .rate__body__right {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.app-body input {
+.rate__body__left__dataOne, .rate__body__left__dataTwo, .rate__body__right__dataOne, .rate__body__right__dataTwo {
   margin-bottom: 10px;
   width: 100%;
   font-size: 60px;
 }
-
-.app-body input,
-.app-body select {
+.rate__body__left__dataOne:focus, .rate__body__left__dataTwo:focus, .rate__body__right__dataOne:focus, .rate__body__right__dataTwo:focus {
+  outline: none;
+  color: rgb(67, 171, 255);
+}
+.rate__body__left__dataOne, .rate__body__left__dataTwo,
+.rate__body__left select, .rate__body__right__dataOne, .rate__body__right__dataTwo,
+.rate__body__right select {
   color: #fff;
   border: none;
   background: none;
   text-align: center;
 }
-
-.app-body select {
+.rate__body__left select, .rate__body__right select {
   padding: 10px 20px;
   font-size: 36px;
   cursor: pointer;
 }
-
-.app-body input:focus,
-.app-body select:focus {
+.rate__body__left select:focus, .rate__body__right select:focus {
   outline: none;
   color: rgb(67, 171, 255);
 }
