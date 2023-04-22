@@ -6,7 +6,7 @@ const btn = document.querySelector('.rate__body__swap');
 const info = document.querySelector('.rate__info');
 
 const calculate = () => {
-	const URL = 'https://api.exchangerate.host/latest';
+	const URL = `https://api.exchangerate.host/convert?from=${moneyLeft.value}&to=${moneyRight.value}`;
 	fetch(URL)
 		.then((res) => res.json())
 		.then((data) => console.log(data));
