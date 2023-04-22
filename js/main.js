@@ -18,7 +18,15 @@ const calculate = () => {
 		});
 };
 
+const swap = () => {
+	const moneyConsts = moneyLeft.value;
+	moneyLeft.value = moneyRight.value;
+	moneyRight.value = moneyConsts;
+	calculate();
+};
+
 dataLeft.addEventListener('input', calculate);
 moneyLeft.addEventListener('change', calculate);
 moneyRight.addEventListener('change', calculate);
+btn.addEventListener('click', swap);
 calculate();
